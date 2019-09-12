@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rajan-Bot</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <div class="stable">
+    <table class="" align="right">
+			<thead>
+        <th>SYMBOLS  </th>
+				<th>ACTIONS  </th>
+			</thead>
+			<tbody>
+				<tr  bgcolor="lightgreen">
+					<td>@</td>
+					<td>general talk</td>
+				</tr>
+				<tr bgcolor="lightblue">
+					<td>*</td>
+					<td>Banking </td>
+				</tr>
+				<tr bgcolor="lightyellow">
+					<td>$</td>
+					<td>Event
+             management</td>
+        </tr>
+        <tr bgcolor="pink">
+            <td>^</td>
+            <td>Small Talk</td>
+          </tr>
+			</tbody>
+    </table>
+    
+  </div>
+    {{content-for "head"}}
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/chat-bot-ember.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- {{content-for "head-footer"}} -->
+  </head>
+  <body>
+    {{content-for "body"}}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/chat-bot-ember.js"></script>
+    {{content-for "body-footer"}}
+  </body>
+</html>

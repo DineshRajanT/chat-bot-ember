@@ -1,0 +1,75 @@
+<div class="row">
+	<div class="col">
+		<div class="panel-body">
+			<img src="https://cdn.wedevs.com/uploads/2018/12/Chatbot-marketing-Feature-image.png" align="right"  height="500" width="560" alt="Active user" />
+			<div class="chats">
+				
+				<div class="qwerty ">
+					<p>Watch out the table to start the convo!!</p>
+					{{!-- <img src="http://cdn-webimages.wimages.net/050ac1f4cfb526772198180a8a61ccacd0fdb3-wm.jpg" alt="" height= "60px" width="200px"> --}}
+				{{#each chats as |chat|}}
+				<div class="chat">
+					<div class="chat-avatar">
+						<a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title=""
+						 data-original-title="June Lane">
+							<img src="http://res.cloudinary.com/yemiwebby-com-ng/image/upload/v1529185121/user-new_fm7q4a.png" alt="Active user">
+							<i></i>
+						</a>
+					</div>
+					<div class="chat-body">
+						<div class="chat-content">
+							<p>
+								{{ chat.query }}
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="chat chat-left">
+					<div class="chat-avatar">
+						<a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+							<img src="http://res.cloudinary.com/yemiwebby-com-ng/image/upload/v1529185121/bot_gphhi8.png" alt="bot">
+							<i></i>
+						</a>
+					</div>
+					<div class="chat-body">
+						<div class="chat-content">
+							<p>{{ chat.speech }}</p>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+				</div>
+				<div class="panel-footer">
+					{{!-- <div class="input-group"> --}}
+						{{input value=message enter="sendChat" class="form-control" placeholder="Enter your message and press enter"}}
+						{{!-- </div> --}}
+				</div>
+			</div>
+		</div>
+
+		{{!-- </div> --}}
+	{{!-- <div class="col">
+		<table class="table table-condensed">
+			<thead>
+				<th>d;kjl</th>
+				<th>bkslzkfj</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>bk.dsvj</td>
+					<td>kjashljf</td>
+				</tr>
+				<tr>
+					<td>bk.dsvj</td>
+					<td>kjashljf</td>
+				</tr>
+				<tr>
+					<td>bk.dsvj</td>
+					<td>kjashljf</td>
+				</tr>
+			</tbody>
+		</table>
+	</div> --}}
+	<h1></h1>
+	</div>
+	</div>
